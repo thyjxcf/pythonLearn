@@ -13,7 +13,7 @@ def getHtml(url):
             if isinstance(tag,bs4.element.Tag):
                     tds = tag.find_all('td')
 
-                    print(tds[0] + '   ' + tds[1] + '    ' + tds[3])
+                    print(tds[0].string + '   ' + tds[1].string + '    ' + tds[3].string)
 
 
 
